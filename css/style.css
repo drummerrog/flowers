@@ -32,6 +32,19 @@ body {
   margin: 0;
 }
 
+#header .smalcart {
+  float: right;
+  height: 55px;
+  padding: 10px;
+  padding-left: 15px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #e6deea;
+}
+
 .header {
   padding-top: 50px;
 }
@@ -326,16 +339,20 @@ body {
   padding: 16px 10px 13px 10px;
 }
 
-.more {
-  font-size: 14px;
-  color: #f24841;
+.open {
   display: block;
+  margin: auto;
+  font-size: 14px;
+  background-color: #ff2e55;
+  color: #fff;
   text-align: center;
   margin-top: 39px;
-  padding: 10px;
+  padding: 16px 30px 16px 30px;
+  border: none;
 }
 
-.more:after {
+/* каретка - стрелочка вниз для отображения дополнительного блока (её нужно перекрасить в белый цвет и найти стрелочку вниз - закрывающую) */
+/* .open:after {
   content: "";
   display: inline-block;
   width: 10px;
@@ -343,7 +360,7 @@ body {
   background: url("../img/caret.svg") no-repeat center;
   margin-left: 14px;
   vertical-align: middle;
-}
+} */
 
 .offer {
   padding: 100px 0 100px 0;

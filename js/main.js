@@ -64,4 +64,41 @@ $(document).ready(function () {
       }
     );
   });
+  $(document).ready(function () {
+    $(".minus-btn").click(function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var input = $("#counter");
+      var value = parseInt(input.val());
+      if (value > 1) {
+        value = value - 1;
+      } else {
+        value = 1;
+      }
+      input.val(value);
+    });
+
+    $(".plus-btn").click(function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var input = $("#counter");
+      var value = parseInt(input.val());
+      if (value < 100) {
+        value = value + 1;
+      } else {
+        value = 100;
+      }
+      input.val(value);
+    });
+  });
+
+  var more = document.querySelector(".more");
+  var open = document.querySelector(".open");
+
+  more.style.display = "none";
+
+  open.addEventListener("click", function () {
+    if (more.style.display == "none") more.style.display = "block";
+    else more.style.display = "none";
+  });
 });
